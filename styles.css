@@ -1,56 +1,56 @@
-:root{
+:root {
     --cyan: hsl(179, 62%, 43%);
     --yellow: hsl(71, 73%, 54%);
-    --grey:  hsl(204, 43%, 93%);
+    --grey: hsl(204, 43%, 93%);
     --white: hsl(0, 0%, 100%);
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  /* flexbox box model */
+    box-sizing: border-box;
+    /* flexbox box model */
 }
 
-body {
+body #container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    /* align-content: center; */
+    align-items: center;
     background-color: var(--grey);
     font-family: Karla;
     font-style: normal;
     font-weight: 400;
 }
 
-.container {
+.flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     height: 250px;
     width: 600px;
-    display: flex;
-    flex-direction: column;
 }
 
 .container--box1 {
+    flex: 1 0 100%;
     background-color: var(--white);
     color: hsl(200, 4%, 61%);
     padding: 30px;
 }
 
 .container--box2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    flex: 1 0 300px;
+    background-color: var(--cyan);
+    padding: 30px;
     color: var(--white);
 }
 
 .container--box3 {
-    background-color: var(--cyan);
-    padding: 30px;
-}
-
-.container--box4 {
+    flex: 1 0 300px;
     background-color: var(--cyan);
     opacity: 0.8;
     padding: 30px;
+    color: var(--white);
 }
 
 h2 {
@@ -72,7 +72,6 @@ button {
     width: 100px;
     padding: 10px;
     border-radius: 10px;
-    /* display: inline-block; */
 }
 
 button:hover {
