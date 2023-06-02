@@ -55,23 +55,53 @@ body #container {
 
 h2 {
     color: var(--cyan);
+    margin-bottom: 20px;
 }
 
 .h3--yellow {
     color: var(--yellow);
+    margin-bottom: 10px;
 }
 
-span {
+.h3--white {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 25px;
+}
+
+.p--box1 {
+    margin-bottom: 10px;
+
+}
+
+.p--box2a {
+    margin-top: 20px;
+}
+
+.p--box2b {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.span--price {
     font-size: 32px;
+}
+
+.span--monthly {
+    opacity: 0.6;
 }
 
 button {
     background-color: var(--yellow);
-    border: none;
     color: var(--white);
-    width: 100px;
-    padding: 10px;
-    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -80,4 +110,18 @@ button:hover {
 
 li {
     list-style-type: none;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 375px) {
+
+    .flexcontainer {
+        flex-flow: row wrap;
+    }
+    
+}
+
+@media screen and (max-width: 1440px) {
+
 }
