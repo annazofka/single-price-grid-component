@@ -78,6 +78,9 @@ p {
 
 .p--box2a {
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .p--box2b {
@@ -119,9 +122,5 @@ li {
     .flexcontainer {
         flex-flow: row wrap;
     }
-    
-}
-
-@media screen and (max-width: 1440px) {
 
 }
