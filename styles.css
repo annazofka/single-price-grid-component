@@ -118,8 +118,12 @@ li {
 
 @media screen and (max-width: 375px) {
 
-    .flexcontainer {
-        flex-flow: wrap;
+    .container--box2 {
+        width: 100%;
+    }
+
+    .container--box3 {
+        width: 100%;
     }
 
 }
